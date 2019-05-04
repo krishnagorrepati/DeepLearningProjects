@@ -1,3 +1,9 @@
+#Assignment 1A colab link.
+
+https://colab.research.google.com/drive/1yqgBvCua1005jzw7R4MSIXeKLWTL-q_2
+
+#Assignment 1B:-
+
 1). What are Channels and Kernels (according to EVA)?
 
 Answer:-
