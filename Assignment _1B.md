@@ -1,4 +1,4 @@
-What are Channels and Kernels (according to EVA)?
+#What are Channels and Kernels (according to EVA)?
 Answer:-
 	Channel is bag of similar features. For example, an Image with RGB can have 3 channels. Each channel has similar color features of the image.
 
