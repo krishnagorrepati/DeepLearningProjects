@@ -13,7 +13,7 @@ Answer:-
 2). Why should we only (well mostly) use 3x3 Kernels?
 
 Answer:-
-	3x3 kernels are widely used to get edges,textures, patterns.
+	3x3 kernels are widely used to get edges,textures, patterns. Also, compupations required (aditoions and mutliplcations as part of convoution operation) is less expensive compared to other 5x5 or more kernels.
 	
 
 3).How many times do we need to perform 3x3 convolution operation to reach 1x1 from 199x199 (show calculations)
