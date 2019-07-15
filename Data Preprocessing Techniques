@@ -1,1 +1,8 @@
 https://becominghuman.ai/image-data-pre-processing-for-neural-networks-498289068258
+
+1). Uniform aspect ratio
+2). Image Scaling
+3). Mean, Standard Deviation of input data
+4). Normalizing image inputs
+5). Dimensionality reduction
+6). Data augmentation
