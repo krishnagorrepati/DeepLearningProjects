@@ -22,6 +22,6 @@ Epoch 10/10
 8000/8000 [==============================] - 0s 38us/step - loss: 0.1726 - acc: 0.9483 - val_loss: 1.3236 - val_acc: 0.6715
 
  
-
+![alt text](https://github.com/krishnagorrepati/DeepLearningProjects/blob/master/Training_and_Validation_Accuracy.jpeg)
 
  
