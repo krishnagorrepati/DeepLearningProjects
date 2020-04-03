@@ -14,10 +14,10 @@ DPG uses a deterministic policy gradient. This induces overestimation error, whi
 ![img](https://miro.medium.com/max/1842/1*azzV78wFkRq9ePrzGnvf5Q.png)
 
 
-
 ### ASYNCHRONOUS ADVANTAGE ACTOR CRITIC ALGORITHM  
 
-We build two separate networks for Actor and Critic. 
+We build two separate networks for Actor and Critic. The actor is going to predict the action. But this time it's actions will have values and those values must be equal to the Critic's values! 
+With one max Q value (Critic), the model may not get stabilized.
 
 ![A3C_Model](https://github.com/krishnagorrepati/DeepLearningProjects/blob/master/img10.png)
 
