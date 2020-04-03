@@ -6,7 +6,7 @@ DPG uses a deterministic policy gradient. This induces overestimation error, whi
 4. **Policy —** Method to map agent’s state to actions
 5. **Value —** Future reward that an agent would receive by taking an action in a particular state
 
-[**Deep Q-Networks(DQNs)** ](https://deepmind.com/research/dqn/)which use Neural Networks to estimate Q-values. But DQNs can only handle discrete, low-dimensional action spaces.
+[**Deep Q-Networks(DQNs)** ](https://deepmind.com/research/dqn/)which use Neural Networks to estimate Q-values. But DQNs can only handle discrete, low-dimensional action spaces. DQN cannot be applied to continuous action spaces. 
 
 [**Deep Deterministic Policy Gradient(DDPG)**](https://arxiv.org/abs/1509.02971) is a model-free, off-policy, actor-critic algorithm that tackles this problem by learning policies in high dimensional, continuous action spaces. The figure below is a representation of **actor-critic** architecture.
 
