@@ -1,1 +1,1 @@
-(BackPropagation)[http://karpathy.github.io/neuralnets/]
+[BackPropagation](http://karpathy.github.io/neuralnets/)
