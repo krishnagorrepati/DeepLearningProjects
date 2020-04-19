@@ -4,7 +4,7 @@ Steps Followed:-
 
 - Defined models for Actor and Critics and applied to TD3 Algorithm. Integrated the T3D training algorithm in TestGame.Update() function
 
-**test_latest.py file has the following details**
+**test.py file has the following details**
 
 > - **TestGame class has the below functions**
 >
@@ -23,7 +23,7 @@ Steps Followed:-
 
 
 
-**test.kv file has following objects to be implemented in test_latest.py file**
+**test.kv file has following objects to be implemented in test.py file**
 
 > - **TestCar**
 >
@@ -47,6 +47,7 @@ Steps Followed:-
 
 **Actor Model**
 
+```
   def __init__(self, action_dim, max_action):
     super(Actor, self).__init__()
     self.conv1 = nn.Conv2d(1, 16, kernel_size=3, stride=2)
@@ -67,33 +68,38 @@ Steps Followed:-
     x = x.reshape(1,-1)
     x = self.max_action * torch.tanh(self.layer_3(x))
     return x
+```
+
+
 
 #### **Critic Model**
 
+```
   def __init__(self ):
         super(Critic, self).__init__()
 
 **Defining the First Critic neural network**
 
-​        self.features1 = nn.Sequential(
-​        	nn.Conv2d(1 , 16 ,kernel_size = 3 ,stride = 2),
-​        	nn.BatchNorm2d(16),
-​        	nn.ReLU(),
-​        	nn.Conv2d(16 , 32 ,kernel_size = 3 ,stride = 2),
-​        	nn.BatchNorm2d(32),
-​        	nn.ReLU(),
-​        	nn.Conv2d(32 , 32 ,kernel_size = 3 ,stride = 2),
-​        	nn.BatchNorm2d(32),
-​        	nn.ReLU(),
-​        	nn.AvgPool2d(4) 
+        self.features1 = nn.Sequential(
+        	nn.Conv2d(1 , 16 ,kernel_size = 3 ,stride = 2),
+        	nn.BatchNorm2d(16),
+        	nn.ReLU(),
+        	nn.Conv2d(16 , 32 ,kernel_size = 3 ,stride = 2),
+        	nn.BatchNorm2d(32),
+        	nn.ReLU(),
+        	nn.Conv2d(32 , 32 ,kernel_size = 3 ,stride = 2),
+        	nn.BatchNorm2d(32),
+        	nn.ReLU(),
+        	nn.AvgPool2d(4) 
 
-​	self.features2 = nn.Sequential(
-​       	 nn.Linear(32+1,300),
-​        	nn.ReLU(),
-​        	nn.Linear(300,400 ),
-​        	nn.ReLU(),
-​        	nn.Linear(400,1)
+	    self.features2 = nn.Sequential(
+          	nn.Linear(32+1,300),
+        	nn.ReLU(),
+        	nn.Linear(300,400 ),
+        	nn.ReLU(),
+        	nn.Linear(400,1)
    	 )
+```
 
 **Defining the second Critic neural network**
 
