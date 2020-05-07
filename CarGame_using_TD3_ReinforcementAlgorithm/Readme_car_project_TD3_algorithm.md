@@ -67,7 +67,7 @@ Steps Followed:-
 ```
 1).actor_2d takes image cropped from the map in 2 dimensional format
 2).actor_1d takes actions in 1 dimensional format which gives the position of the car in the map.
- 
+3). Image (actor_2d) and car position (actor_1d) are merged into actor_merged
  self.actor_2d = nn.Sequential(
         nn.Conv2d(1 , 16 ,kernel_size = 3 ,stride = 2),
         nn.BatchNorm2d(16),
@@ -127,7 +127,7 @@ def forward(self, state_img,state_pos):
   def __init__(self ):
         super(Critic, self).__init__()
 
-**Defining the First Critic neural network**
+Defining the First Critic neural network
     self.features1 = nn.Sequential(
         nn.Conv2d(1 , 16 ,kernel_size = 3 ,stride = 2),
         nn.BatchNorm2d(16),
