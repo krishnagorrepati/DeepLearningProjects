@@ -4,7 +4,7 @@ Steps Followed:-
 
 - Defined models for Actor and Critics and applied to TD3 Algorithm. Integrated the T3D training algorithm in TestGame.Update() function
 
-**test.py file has the following details**
+**test_latest.py file has the following details**
 
 > - **TestGame class has the below functions**
 >
@@ -23,7 +23,7 @@ Steps Followed:-
 
 
 
-**test.kv file has following objects to be implemented in test.py file**
+**test.kv file has following objects to be implemented in test_latest.py file**
 
 > - **TestCar**
 >
